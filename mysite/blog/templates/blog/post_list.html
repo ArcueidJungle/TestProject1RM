@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мой блог</title>
+</head>
+<body>
+    <h1>Все посты</h1>
+    {% for post in posts %}
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+        <p>Опубликовано: {{ post.created_at }}</p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
